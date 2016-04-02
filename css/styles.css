@@ -1,0 +1,143 @@
+@font-face {font-family:"NissanAGLight"; src:url("../fonts/nissanaglig_ttf-webfont.eot"); src:url("../fonts/nissanaglig_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanaglig_ttf-webfont.woff") format("woff"), url("../fonts/nissanaglig_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanaglig_ttf-webfont.svg#nissan_aglight") format("svg"); font-weight:normal; font-style:normal}
+@font-face {font-family:"NissanAGRegular"; src:url("../fonts/nissanagreg_ttf-webfont.eot"); src:url("../fonts/nissanagreg_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanagreg_ttf-webfont.woff") format("woff"), url("../fonts/nissanagreg_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanagreg_ttf-webfont.svg#nissan_agregular") format("svg"); font-weight:normal; font-style:normal}
+@font-face {font-family:"NissanAGMedium"; src:url("../fonts/nissanagmed_ttf-webfont.eot"); src:url("../fonts/nissanagmed_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanagmed_ttf-webfont.woff") format("woff"), url("../fonts/nissanagmed_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanagmed_ttf-webfont.svg#nissan_agmedium") format("svg"); font-weight:normal; font-style:normal}
+@font-face {font-family:"NissanAGBold"; src:url("../fonts/nissanagbol_ttf-webfont.eot"); src:url("../fonts/nissanagbol_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanagbol_ttf-webfont.woff") format("woff"), url("../fonts/nissanagbol_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanagbol_ttf-webfont.svg#nissan_agbold") format("svg"); font-weight:normal; font-style:normal}
+
+html {min-width:320px}
+
+body {min-width:320px; margin:0; padding:0; font:18px/21px NissanAGRegular, verdana, geneva, sans-serif; color:#fff; background:#032f4c}
+
+a {outline:none; color:#fff}
+a:hover {text-decoration:none}
+
+img {border:none}
+
+.wrapper {min-width:320px; width:100%; background:url(../images/bg.jpg) no-repeat center; background-size:cover; position:relative}
+
+.main-title {text-align:center; font:36px/36px NissanAGBold, verdana, geneva, sans-serif; text-transform:uppercase; padding:51px 0 0 0}
+.main-subtitle {text-align:center; font:24px/24px NissanAGLight, verdana, geneva, sans-serif; text-transform:uppercase; padding:8px 0 0 0}
+
+.main-list {padding:31px 90px 0 90px}
+.main-list:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.main-item {float:left; width:25%; text-align:center; height:349px; margin:25px 0 0 0}
+.main-item-inner {display:inline-block; vertical-align:top}
+.main-item-top {height:178px}
+.main-item-icon {width:178px; height:178px; position:relative; line-height:178px; margin:0 auto}
+.main-item-inner:hover .main-item-icon {display:none}
+.main-item-icon img {vertical-align:middle}
+.main-item-icon:before {content:""; display:block; width:176px; height:176px; position:absolute; left:0; top:0; border:1px solid #fff; opacity:.2; filter:alpha(opacity=20)}
+.main-item-links {display:none; width:231px; padding:27px 0 0 0; margin:0 auto; font:16px/57px NissanAGMedium, verdana, geneva, sans-serif; text-transform:uppercase}
+.main-item-inner:hover .main-item-links {display:block}
+.main-item-link-new {display:block; height:57px; text-align:left; color:#fff; position:relative; text-decoration:none}
+.main-item-link-new:before {content:""; display:block; position:absolute; left:0; top:0; width:229px; height:55px; border:1px solid #fff; opacity:.2; filter:alpha(opacity=20); background:#fff; background:rgba(255, 255, 255, .4)}
+.main-item-link-new span {display:block; position:relative; padding:0 0 0 56px}
+.main-item-link-success {display:block; height:57px; text-align:left; color:#fff; position:relative; text-decoration:none}
+.main-item-link-success:before {content:""; display:block; position:absolute; left:0; top:0; width:229px; height:55px; border:1px solid #fff; opacity:.2; filter:alpha(opacity=20); background:#fff; background:rgba(255, 255, 255, .4)}
+.main-item-link-success span {display:block; position:relative; padding:0 0 0 56px; background:url(../images/main-item-link-success.png) no-repeat 18px 20px}
+.main-item-link-rating {margin:10px 0 0 0; display:block; height:57px; padding:0 0 0 56px; text-align:left; color:#ca1a2a; background:#fff url(../images/main-item-link-rating.png) no-repeat 18px center; text-decoration:none}
+.main-item-title {font:24px/29px NissanAGBold, verdana, geneva, sans-serif; text-transform:uppercase; padding:15px 0 0 0}
+.main-item-descr {font:18px/19px NissanAGLight, verdana, geneva, sans-serif; text-transform:uppercase; padding:12px 0 0 0}
+
+.leaders {min-width:320px; width:100%; background:#ca1a2a url(../images/bg-leaders.png) no-repeat center; background-size:cover; position:relative}
+.leaders-title {text-align:center; font:36px/36px NissanAGBold, verdana, geneva, sans-serif; text-transform:uppercase; padding:45px 0 0 0}
+.leaders-list {padding:0 90px 97px 90px}
+.leaders-list:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.leaders-item {float:right; width:45%; display:table; margin:58px 0 0 0}
+.leaders-item:first-child {float:left}
+.leaders-item-photo {display:table-cell; vertical-align:middle; line-height:0; width:178px}
+.leaders-item-photo img {border:1px solid #fff; border-radius:89px}
+.leaders-item-text {display:table-cell; vertical-align:middle; padding:0 0 0 30px}
+.leaders-item-name {text-transform:uppercase; font:24px/24px NissanAGBold, verdana, geneva, sans-serif}
+.leaders-item-post {font:18px/19px NissanAGLight, verdana, geneva, sans-serif; padding:8px 0 0 0}
+
+.overlay {display:none; position:absolute; z-index:98; left:0; top:0; width:100%; height:100%; background:#000; opacity:.6; filter:alpha(opacity=60)}
+
+.window {display:none; position:absolute; z-index:99; left:50%; top:50%; width:800px; color:#000; margin-left:-400px; background:#fff}
+.window a {color:#000}
+.window-title {text-align:center; font:30px/30px NissanAGBold, verdana, geneva, sans-serif; text-transform:uppercase; padding:73px 0 0 0}
+.window-close {display:block; width:27px; height:27px; position:absolute; right:20px; top:20px; background:url(../images/window-close.png)}
+
+.registration {height:730px; margin-top:-365px}
+.registration-fin {height:689px; margin-top:-345px}
+
+form {margin:0; padding:0}
+
+.form-required {text-align:center; padding:18px 0 0 0}
+.form-required:after {content:""; display:block; width:105px; height:1px; background:#d8d8d8; margin:27px auto 0 auto}
+.registration-fin .form-required:after {margin:47px auto 13px auto}
+
+.auth-social {text-align:center; font-size:0; line-height:0; letter-spacing:-1px; padding:30px 0 0 0}
+.auth-social a {margin:0 0 0 17px}
+.auth-social a:first-child {margin:0}
+
+.auth-form {width:619px; margin:0 auto; padding:37px 0 0 0}
+.auth-form:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.auth-form-col {float:left; width:310px; margin:0 -1px 0 0}
+.form-input {height:50px; position:relative; margin:0 0 -1px 0}
+.form-input span {display:none; position:absolute; left:21px; top:15px; font:16px/20px NissanAGLight, verdana, geneva, sans-serif; text-transform:uppercase}
+.form-input input {vertical-align:top; border:1px solid #d8d8d8; width:100%; height:50px; box-sizing:border-box; background:url(../images/blank.gif); margin:0; padding:14px 20px; outline:none; color:#000; font:16px/20px NissanAGMedium, verdana, geneva, sans-serif; -webkit-appearance:none}
+.form-input input.error {border-color:#f00; position:relative; z-index:2}
+.form-input label.error {display:none !important}
+
+.form-rules {text-align:center; font-size:16px; padding:29px 0 0 0}
+.form-rules-inner {display:table; margin:0 auto}
+.form-rules-checkbox {display:table-cell; vertical-align:middle; width:25px}
+.form-rules-link {display:table-cell; vertical-align:middle; padding:0 0 0 20px}
+
+.form-checkbox {position:relative; width:23px; height:23px; border:1px solid #d8d8d8; cursor:pointer}
+.form-checkbox input {display:none}
+.form-checkbox.error {border-color:#f00}
+.form-checkbox.checked:after {content:""; display:block; width:11px; height:11px; position:absolute; left:6px; top:6px; background:#d8d8d8}
+.form-checkbox label.error {display:none !important}
+
+.form-submit {text-align:center; padding:27px 0 0 0}
+.form-submit input {vertical-align:top; border:none; background:#ce2541; width:400px; height:50px; margin:0; padding:0; outline:none; cursor:pointer; color:#fff; text-align:center; text-transform:uppercase; font:16px/50px NissanAGMedium, verdana, geneva, sans-serif; -webkit-appearance:none}
+
+.reg-auth {text-align:center; font-size:16px; color:#999; padding:16px 0 0 0}
+.reg-auth a {color:#ce2541}
+
+.login {width:520px; height:650px; margin:-325px 0 0 -260px}
+.login .window-title {padding:93px 0 0 0}
+.login .auth-form {width:400px}
+.login .form-submit {padding:30px 0 0 0}
+.auth-reg {text-align:center; font-size:16px; padding:16px 0 0 0}
+.auth-reg a {color:#ce2541}
+.auth-forgot {text-align:center; font-size:16px; padding:8px 0 0 0}
+.auth-forgot a {color:#999}
+
+.forgot {width:520px; height:475px; margin:-238px 0 0 -260px}
+.forgot .window-title {padding:93px 0 0 0}
+.forgot .form-required:after {display:none}
+.forgot .auth-form {width:400px}
+.forgot .form-submit {padding:30px 0 0 0}
+.forgot-auth {text-align:center; font-size:16px; padding:16px 0 0 0}
+.forgot-auth a {color:#ce2541}
+.forgot-reg {text-align:center; font-size:16px; padding:8px 0 0 0}
+.forgot-reg a {color:#999}
+
+.profile {padding:0 90px 123px 90px}
+
+.profile-header {font-size:16px; padding:56px 0 0 0; margin:0 0 -20px 0}
+.profile-header:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.profile-header a {color:#c6c6c6; text-decoration:none; padding:0 0 0 25px; background:url(../images/profile-header-prev.png) no-repeat left center}
+
+.profile-text {max-width:846px; text-align:center; margin:0 auto; padding:20px 0 0 0}
+.profile-text:after {content:""; display:block; width:105px; height:1px; margin:26px auto 0 auto; background:#c6c6c6}
+
+.profile-list {max-width:864px; margin:0 auto; padding:12px 0 50px 0}
+.profile-list:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.profile-list a {float:left; width:270px; height:198px; text-align:center; line-height:198px; background:#fff; margin:18px 9px 0 9px}
+.profile-list a img {vertical-align:middle}
+
+.profile-ctrl {text-align:center; font-size:0; line-height:0; letter-spacing:-1px}
+.profile-ctrl-main {display:inline-block; vertical-align:top; width:308px; height:50px; background:#ce2541; color:#fff; text-transform:uppercase; font:16px/50px NissanAGMedium, verdana, geneva, sans-serif; letter-spacing:0; text-decoration:none}
+.profile-ctrl-panel {display:inline-block; vertical-align:top; padding:0 0 0 75px; height:50px; background:#ce2541 url(../images/profile-ctrl-panel.png) no-repeat 25px center; margin:0 0 0 20px}
+.profile-ctrl-panel a {float:left; width:58px; height:50px; background:#fff url(../images/profile-social.png); position:relative}
+.profile-ctrl-panel a.profile-ctrl-fb {background-position:left top}
+.profile-ctrl-panel a.profile-ctrl-fb:hover {background-position:left -50px}
+.profile-ctrl-panel a.profile-ctrl-vk {background-position:-58px top}
+.profile-ctrl-panel a.profile-ctrl-vk:hover {background-position:-58px -50px}
+.profile-ctrl-panel a.profile-ctrl-ok {background-position:-116px top}
+.profile-ctrl-panel a.profile-ctrl-ok:hover {background-position:-116px -50px}
+.profile-ctrl-panel a.profile-ctrl-tw {background-position:-174px top}
+.profile-ctrl-panel a.profile-ctrl-tw:hover {background-position:-174px -50px}
