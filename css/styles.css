@@ -17,6 +17,11 @@ img {border:none}
 .main-title {text-align:center; font:36px/36px NissanAGBold, verdana, geneva, sans-serif; text-transform:uppercase; padding:51px 0 0 0}
 .main-subtitle {text-align:center; font:24px/24px NissanAGLight, verdana, geneva, sans-serif; text-transform:uppercase; padding:8px 0 0 0}
 
+@media (max-width:1000px) {
+    .main-title,
+    .main-subtitle {padding-left:20px; padding-right:20px}
+}
+
 .main-list {padding:31px 90px 0 90px}
 .main-list:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .main-item {float:left; width:25%; text-align:center; height:349px; margin:25px 0 0 0}
@@ -38,6 +43,21 @@ img {border:none}
 .main-item-title {font:24px/29px NissanAGBold, verdana, geneva, sans-serif; text-transform:uppercase; padding:15px 0 0 0}
 .main-item-descr {font:18px/19px NissanAGLight, verdana, geneva, sans-serif; text-transform:uppercase; padding:12px 0 0 0}
 
+@media (max-width:1000px) {
+    .main-list {padding-left:20px; padding-right:20px}
+    .main-item {width:33.33%}
+    .main-item-title,
+    .main-item-descr {padding-left:10px; padding-right:5px}
+}
+
+@media (max-width:768px) {
+    .main-item {width:50%}
+}
+
+@media (max-width:480px) {
+    .main-item {width:100%}
+}
+
 .leaders {min-width:320px; width:100%; background:#ca1a2a url(../images/bg-leaders.png) no-repeat center; background-size:cover; position:relative}
 .leaders-title {text-align:center; font:36px/36px NissanAGBold, verdana, geneva, sans-serif; text-transform:uppercase; padding:45px 0 0 0}
 .leaders-list {padding:0 90px 97px 90px}
@@ -50,12 +70,22 @@ img {border:none}
 .leaders-item-name {text-transform:uppercase; font:24px/24px NissanAGBold, verdana, geneva, sans-serif}
 .leaders-item-post {font:18px/19px NissanAGLight, verdana, geneva, sans-serif; padding:8px 0 0 0}
 
+@media (max-width:1000px) {
+    .leaders-list {padding-left:20px; padding-right:20px}
+    .leaders-item {width:100%}
+}
+
 .overlay {display:none; position:absolute; z-index:98; left:0; top:0; width:100%; height:100%; background:#000; opacity:.6; filter:alpha(opacity=60)}
 
 .window {display:none; position:absolute; z-index:99; left:50%; top:50%; width:800px; color:#000; margin-left:-400px; background:#fff}
 .window a {color:#000}
 .window-title {text-align:center; font:30px/30px NissanAGBold, verdana, geneva, sans-serif; text-transform:uppercase; padding:73px 0 0 0}
 .window-close {display:block; width:27px; height:27px; position:absolute; right:20px; top:20px; background:url(../images/window-close.png)}
+
+@media (max-width:1000px) {
+    .window {width:300px; padding:0 10px; margin-left:-160px; font-size:14px; line-height:17px}
+    .window-title {font-size:20px; line-height:20px; padding:37px 0 0 0}
+}
 
 .registration {height:730px; margin-top:-365px}
 .registration-fin {height:689px; margin-top:-345px}
@@ -73,11 +103,26 @@ form {margin:0; padding:0}
 .auth-form {width:619px; margin:0 auto; padding:37px 0 0 0}
 .auth-form:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .auth-form-col {float:left; width:310px; margin:0 -1px 0 0}
-.form-input {height:50px; position:relative; margin:0 0 -1px 0}
-.form-input span {display:none; position:absolute; left:21px; top:15px; font:16px/20px NissanAGLight, verdana, geneva, sans-serif; text-transform:uppercase}
-.form-input input {vertical-align:top; border:1px solid #d8d8d8; width:100%; height:50px; box-sizing:border-box; background:url(../images/blank.gif); margin:0; padding:14px 20px; outline:none; color:#000; font:16px/20px NissanAGMedium, verdana, geneva, sans-serif; -webkit-appearance:none}
-.form-input input.error {border-color:#f00; position:relative; z-index:2}
-.form-input label.error {display:none !important}
+.form-input,
+.form-textarea {height:50px; position:relative; margin:0 0 -1px 0}
+.form-textarea {height:160px; margin:0}
+.form-input span,
+.form-textarea span {display:none; position:absolute; left:21px; top:15px; font:16px/20px NissanAGLight, verdana, geneva, sans-serif; text-transform:uppercase}
+.form-input input,
+.form-textarea textarea {vertical-align:top; border:1px solid #d8d8d8; width:100%; height:50px; box-sizing:border-box; background:url(../images/blank.gif); margin:0; padding:14px 20px; outline:none; color:#000; font:16px/20px NissanAGMedium, verdana, geneva, sans-serif; -webkit-appearance:none}
+.form-textarea textarea {height:160px; overflow:auto}
+.form-input input.error,
+.form-textarea textarea.error {border-color:#f00; position:relative; z-index:2}
+.form-input label.error,
+.form-textarea label.error {display:none !important}
+
+@media (max-width:1000px) {
+    .auth-form {width:auto}
+    .auth-form-col {width:100%; margin:0}
+    .form-input {height:40px}
+    .form-input span {top:9px}
+    .form-input input {height:40px; padding-top:9px; padding-bottom:9px}
+}
 
 .form-rules {text-align:center; font-size:16px; padding:29px 0 0 0}
 .form-rules-inner {display:table; margin:0 auto}
@@ -93,6 +138,10 @@ form {margin:0; padding:0}
 .form-submit {text-align:center; padding:27px 0 0 0}
 .form-submit input {vertical-align:top; border:none; background:#ce2541; width:400px; height:50px; margin:0; padding:0; outline:none; cursor:pointer; color:#fff; text-align:center; text-transform:uppercase; font:16px/50px NissanAGMedium, verdana, geneva, sans-serif; -webkit-appearance:none}
 
+@media (max-width:1000px) {
+    .form-submit input {width:100%; height:40px; line-height:40px}
+}
+
 .reg-auth {text-align:center; font-size:16px; color:#999; padding:16px 0 0 0}
 .reg-auth a {color:#ce2541}
 
@@ -105,6 +154,11 @@ form {margin:0; padding:0}
 .auth-forgot {text-align:center; font-size:16px; padding:8px 0 0 0}
 .auth-forgot a {color:#999}
 
+@media (max-width:1000px) {
+    .login {width:300px; padding:0 10px; margin-left:-160px}
+    .login .auth-form  {width:100%}
+}
+
 .forgot {width:520px; height:475px; margin:-238px 0 0 -260px}
 .forgot .window-title {padding:93px 0 0 0}
 .forgot .form-required:after {display:none}
@@ -115,11 +169,20 @@ form {margin:0; padding:0}
 .forgot-reg {text-align:center; font-size:16px; padding:8px 0 0 0}
 .forgot-reg a {color:#999}
 
+@media (max-width:1000px) {
+    .forgot {width:300px; padding:0 10px; margin-left:-160px}
+    .forgot .auth-form  {width:100%}
+}
+
 .profile {padding:0 90px 123px 90px}
+
+@media (max-width:1000px) {
+    .profile {padding-left:20px; padding-right:20px}
+}
 
 .profile-header {font-size:16px; padding:56px 0 0 0; margin:0 0 -20px 0}
 .profile-header:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
-.profile-header a {color:#c6c6c6; text-decoration:none; padding:0 0 0 25px; background:url(../images/profile-header-prev.png) no-repeat left center}
+.profile-header a {float:left; color:#c6c6c6; text-decoration:none; padding:0 0 0 25px; background:url(../images/profile-header-prev.png) no-repeat left center}
 
 .profile-text {max-width:846px; text-align:center; margin:0 auto; padding:20px 0 0 0}
 .profile-text:after {content:""; display:block; width:105px; height:1px; margin:26px auto 0 auto; background:#c6c6c6}
@@ -141,3 +204,70 @@ form {margin:0; padding:0}
 .profile-ctrl-panel a.profile-ctrl-ok:hover {background-position:-116px -50px}
 .profile-ctrl-panel a.profile-ctrl-tw {background-position:-174px top}
 .profile-ctrl-panel a.profile-ctrl-tw:hover {background-position:-174px -50px}
+
+@media (max-width:1000px) {
+    .profile-ctrl-main {width:auto; display:block}
+    .profile-ctrl-panel {margin:20px 0 0 0}
+}
+
+.short-list {padding:0 90px 50px 90px}
+
+@media (max-width:1000px) {
+    .short-list {padding-left:20px; padding-right:20px}
+}
+
+.short-list-header {font-size:16px; text-align:center; padding:43px 0 0 0}
+.short-list-header:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.short-list-back {float:left; color:#c6c6c6; text-decoration:none; padding:0 0 0 25px; margin:13px 0 0 0; background:url(../images/profile-header-prev.png) no-repeat left center}
+.short-list-next {float:right; color:#c6c6c6; text-decoration:none; padding:0 25px 0 0; margin:13px 0 0 0; background:url(../images/profile-header-next.png) no-repeat right center}
+.short-list-title {font:36px/36px NissanAGMedium, verdana, geneva, sans-serif; text-transform:uppercase}
+
+.short-list-text {max-width:1030px; margin:0 auto; text-align:center; font:19px/23px NissanAGLight, verdana, geneva, sans-serif; padding:38px 0 0 0}
+
+.short-list-content {font-size:0; line-height:0; letter-spacing:-1px; padding:11px 0 41px 0}
+.short-list-item {display:inline-block; vertical-align:top; width:221px; padding:10px; margin:20px 8px 0 7px; background:#fff}
+.short-list-preview a:hover img {opacity:.5; filter:alpha(opacity=50)}
+.short-list-name {color:#00060a; font:14px/17px NissanAGMedium, verdana, geneva, sans-serif; text-transform:uppercase; letter-spacing:0; text-align:center; padding:12px 0 0 0}
+.short-list-ctrl:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.short-list-like {float:left; padding:18px 0 0 3px}
+.short-list-like a {display:block; width:19px; height:17px; background:url(../images/short-list-like.png)}
+.short-list-like a.active {background-position:left -17px}
+.short-list-detail {float:right; font-size:14px; line-height:17px; letter-spacing:0; padding:20px 5px 0 0}
+.short-list-detail a {color:#5e5e5e}
+
+.add-link {display:block; width:280px; height:50px; margin:0 auto; text-align:center; color:#fff; text-transform:uppercase; text-decoration:none; background:#ce2541; font:16px/50px NissanAGMedium, verdana, geneva, sans-serif}
+
+.add-form {width:619px; padding:0 90px}
+.add-form-title {font:38px/38px NissanAGBold, verdana, geneva, sans-serif; text-transform:uppercase; text-align:center; padding:47px 0 0 0}
+.add-form-text {font:18px/21px NissanAGLight, verdana, geneva, sans-serif; text-align:center; padding:18px 0 0 0}
+.add-form-icon {line-height:0; text-align:center; font-size:0; letter-spacing:-1px; padding:19px 0 30px 0}
+.add-form-icon img {vertical-align:middle}
+.add-form-icon:before,
+.add-form-icon:after {content:""; display:inline-block; vertical-align:middle; width:85px; height:1px; background:#c6c6c6; margin:0 26px}
+.add-form .form-submit {padding:30px 0 60px 0}
+.add-form .form-submit input {width:308px}
+.add-form-media-title {text-align:center; padding:26px 0 15px 0}
+.add-form-media-tabs {border:1px solid #d8d8d8; font:16px/48px NissanAGLight, verdana, geneva, sans-serif; text-align:center; text-transform:uppercase}
+.add-form-media-tabs:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.add-form-media-radio {float:left; width:50%; cursor:pointer}
+.add-form-media-radio.checked {background:#eee}
+.add-form-media-radio em {display:none; font-style:normal}
+.add-form-media-radio input {display:none}
+.add-form-media-content {display:none}
+.add-form-media-content.active {display:block}
+.add-form-media-content .form-input {margin:-1px 0 0 0}
+.form-files {padding:0 0 10px 0}
+.form-files:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.form-file {float:left; width:115px; height:79px; margin:10px 0 0 11px; position:relative; overflow:hidden; background:#fafafa url(../images/form-file.png) no-repeat center; cursor:pointer}
+.form-file:first-child {margin-left:0}
+.form-file input {height:999px; position:absolute; top:0; right:0; opacity:0; filter:alpha(opacity=0); cursor:pointer; font-size:999px; background:url(../images/blank.gif)}
+.form-file img {width:100%}
+
+@media (max-width:1000px) {
+    .add-form {width:300px; padding:0 10px}
+    .add-form-icon:before,
+    .add-form-icon:after {display:none}
+    .add-form-media-radio span {display:none}
+    .add-form-media-radio em {display:block}
+    .form-file {width:100%; margin-left:0}
+}
