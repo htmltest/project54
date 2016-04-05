@@ -15,7 +15,7 @@ img {border:none}
 .wrapper {min-width:320px; width:100%; background:url(../images/bg.jpg) no-repeat center; background-size:cover; position:relative}
 
 .main-title {text-align:center; font:36px/36px NissanAGBold, verdana, geneva, sans-serif; text-transform:uppercase; padding:51px 0 0 0}
-.main-subtitle {text-align:center; font:1.33em/1em NissanAGLight, verdana, geneva, sans-serif; text-transform:uppercase; padding:8px 0 0 0}
+.main-subtitle {text-align:center; font:24px/24px NissanAGLight, verdana, geneva, sans-serif; text-transform:uppercase; padding:8px 0 0 0}
 
 @media (max-width:1000px) {
     .main-title,
