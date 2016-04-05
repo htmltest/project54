@@ -1,11 +1,11 @@
-@font-face {font-family:"NissanAGLight"; src:url("../fonts/nissanaglig_ttf-webfont.eot"); src:url("../fonts/nissanaglig_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanaglig_ttf-webfont.woff") format("woff"), url("../fonts/nissanaglig_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanaglig_ttf-webfont.svg#nissan_aglight") format("svg"); font-weight:normal; font-style:normal}
+@font-face {font-family:"NissanAGLight"; src:url("../fonts/nissanaglig_ttf-webfont.eot"); src:url("../fonts/nissanaglig_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanaglig_ttf-webfont.woff") format("woff"), url("../fonts/nissanaglig_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanaglig_ttf-webfont.svg#nissan_prolight") format("svg"); font-weight:normal; font-style:normal}
 @font-face {font-family:"NissanAGRegular"; src:url("../fonts/nissanagreg_ttf-webfont.eot"); src:url("../fonts/nissanagreg_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanagreg_ttf-webfont.woff") format("woff"), url("../fonts/nissanagreg_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanagreg_ttf-webfont.svg#nissan_agregular") format("svg"); font-weight:normal; font-style:normal}
-@font-face {font-family:"NissanAGMedium"; src:url("../fonts/nissanagmed_ttf-webfont.eot"); src:url("../fonts/nissanagmed_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanagmed_ttf-webfont.woff") format("woff"), url("../fonts/nissanagmed_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanagmed_ttf-webfont.svg#nissan_agmedium") format("svg"); font-weight:normal; font-style:normal}
-@font-face {font-family:"NissanAGBold"; src:url("../fonts/nissanagbol_ttf-webfont.eot"); src:url("../fonts/nissanagbol_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanagbol_ttf-webfont.woff") format("woff"), url("../fonts/nissanagbol_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanagbol_ttf-webfont.svg#nissan_agbold") format("svg"); font-weight:normal; font-style:normal}
+@font-face {font-family:"NissanAGMedium"; src:url("../fonts/nissanagmed_ttf-webfont.eot"); src:url("../fonts/nissanagmed_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanagmed_ttf-webfont.woff") format("woff"), url("../fonts/nissanagmed_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanagmed_ttf-webfont.svg#nissan_promedium") format("svg"); font-weight:normal; font-style:normal}
+@font-face {font-family:"NissanAGBold"; src:url("../fonts/nissanagbol_ttf-webfont.eot"); src:url("../fonts/nissanagbol_ttf-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/nissanagbol_ttf-webfont.woff") format("woff"), url("../fonts/nissanagbol_ttf-webfont.ttf") format("truetype"), url("../fonts/nissanagbol_ttf-webfont.svg#nissan_probold") format("svg"); font-weight:normal; font-style:normal}
 
 html {min-width:320px}
 
-body {min-width:320px; margin:0; padding:0; font:18px/21px NissanAGRegular, verdana, geneva, sans-serif; color:#fff; background:#032f4c}
+body {min-width:320px; margin:0; padding:0; font:18px/21px NissanAGRegular, verdana, geneva, sans-serif; color:#fff; background:#032f4c; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
 
 a {outline:none; color:#fff}
 a:hover {text-decoration:none}
@@ -15,7 +15,7 @@ img {border:none}
 .wrapper {min-width:320px; width:100%; background:url(../images/bg.jpg) no-repeat center; background-size:cover; position:relative}
 
 .main-title {text-align:center; font:36px/36px NissanAGBold, verdana, geneva, sans-serif; text-transform:uppercase; padding:51px 0 0 0}
-.main-subtitle {text-align:center; font:24px/24px NissanAGLight, verdana, geneva, sans-serif; text-transform:uppercase; padding:8px 0 0 0}
+.main-subtitle {text-align:center; font:1.33em/1em NissanAGLight, verdana, geneva, sans-serif; text-transform:uppercase; padding:8px 0 0 0}
 
 @media (max-width:1000px) {
     .main-title,
@@ -40,14 +40,12 @@ img {border:none}
 .main-item-link-success:before {content:""; display:block; position:absolute; left:0; top:0; width:229px; height:55px; border:1px solid #fff; opacity:.2; filter:alpha(opacity=20); background:#fff; background:rgba(255, 255, 255, .4)}
 .main-item-link-success span {display:block; position:relative; padding:0 0 0 56px; background:url(../images/main-item-link-success.png) no-repeat 18px 20px}
 .main-item-link-rating {margin:10px 0 0 0; display:block; height:57px; padding:0 0 0 56px; text-align:left; color:#ca1a2a; background:#fff url(../images/main-item-link-rating.png) no-repeat 18px center; text-decoration:none}
-.main-item-title {font:24px/29px NissanAGBold, verdana, geneva, sans-serif; text-transform:uppercase; padding:15px 0 0 0}
-.main-item-descr {font:18px/19px NissanAGLight, verdana, geneva, sans-serif; text-transform:uppercase; padding:12px 0 0 0}
+.main-item-title {font:24px/29px NissanAGBold, verdana, geneva, sans-serif; text-transform:uppercase; padding:15px 10px 0 10px}
+.main-item-descr {font:18px/19px NissanAGLight, verdana, geneva, sans-serif; padding:12px 10px 0 10px}
 
 @media (max-width:1000px) {
     .main-list {padding-left:20px; padding-right:20px}
     .main-item {width:33.33%}
-    .main-item-title,
-    .main-item-descr {padding-left:10px; padding-right:5px}
 }
 
 @media (max-width:768px) {
